@@ -10,12 +10,24 @@
 	@apply w-[240px] !important;
 }
 
+.dot-popup {
+	@apply w-[145px] !important;
+}
+
 .leaflet-popup-content {
 	@apply m-0 !important;
 }
 
 .mnt-popup > a {
 	@apply text-white hover:text-slate-300 transition-all duration-150 ease-in-out !important;
+}
+
+.dot-popup > a {
+	@apply text-slate-900 hover:text-slate-800 transition-all duration-150 ease-in-out !important;
+}
+
+.no-img > a {
+	@apply text-slate-900 hover:text-slate-800 transition-all duration-150 ease-in-out !important;
 }
 
 .leaflet-popup-close-button {

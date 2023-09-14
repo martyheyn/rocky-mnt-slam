@@ -9,7 +9,7 @@
 	import { browser } from '$app/environment';
 	import { mountainPeaks } from '../utils/mountains';
 	import { jasonTracks } from '../utils/jason-coords';
-	import type { LatLngExpression, divIcon } from 'leaflet';
+	import type { Icon, LatLngExpression, divIcon } from 'leaflet';
 	import { convertToStandardTime } from '../utils/time';
 
 	import MntPopup from '../components/popups/mnt-popup.svelte';
@@ -20,6 +20,71 @@
 
 	// get current date
 	const lastUpdated = 'Sept 14 2023, 09:00:00 (EST)';
+
+	// function to create mountain marker
+
+	type mntData = {
+		name: string;
+		gain: number;
+		elevation: number;
+		location: {
+			lat: number;
+			lng: number;
+		};
+		link: string;
+		img: string;
+		vid: string;
+	}[];
+
+	const placeMntMarker = async (
+		mnts: mntData,
+		icon: Icon<{
+			iconUrl: string;
+			iconSize: [number, number];
+		}>
+	) => {
+		const leaflet = await import('leaflet');
+
+		mnts.map((peak) => {
+			let marker = leaflet
+				.marker([peak.location.lat, peak.location.lng], {
+					opacity: 1,
+					icon: icon,
+					riseOnHover: true
+				})
+
+				.addTo(map)
+				.bindPopup('');
+
+			// need to render this component as HTML to pass to the popup
+			// Create a new instance of the Child component
+			marker.on('click', function (e) {
+				// Create a container div for your Svelte component
+				const container = document.createElement('div');
+
+				// Instantiate the Svelte component inside the container
+				new MntPopup({
+					target: container,
+					props: {
+						peakName: peak.name,
+						peakElevation: peak.elevation,
+						peakHieght: peak.gain,
+						link: peak.link,
+						img: peak.img,
+						video: peak.vid
+					}
+				});
+
+				const popup = leaflet.popup({
+					className: `mnt-popup ${!peak.img ? 'no-img' : ''}`
+				});
+
+				popup.setContent(container);
+
+				marker.bindPopup(popup).openPopup();
+			});
+		});
+	};
 
 	// TODO'S
 	// cleanup code
@@ -79,121 +144,9 @@
 				iconSize: [8, 8]
 			});
 
-			mountainPeaks.colorado.map((peak) => {
-				let marker = leaflet
-					.marker([peak.location.lat, peak.location.lng], {
-						opacity: 1,
-						icon: mntMarker,
-						riseOnHover: true
-					})
-
-					.addTo(map)
-					.bindPopup('');
-
-				// need to render this component as HTML to pass to the popup
-				// Create a new instance of the Child component
-				marker.on('click', function (e) {
-					const popup = leaflet.popup();
-
-					// Create a container div for your Svelte component
-					const container = document.createElement('div');
-
-					// Instantiate the Svelte component inside the container
-					new MntPopup({
-						target: container,
-						props: {
-							peakName: peak.name,
-							peakElevation: peak.elevation,
-							peakHieght: peak.gain,
-							link: peak.link,
-							img: peak.img,
-							video: peak.vid
-						}
-					});
-
-					popup.setContent(container);
-
-					marker.bindPopup(popup).openPopup();
-				});
-			});
-
-			mountainPeaks.wyoming.map((peak) => {
-				let marker = leaflet
-					.marker([peak.location.lat, peak.location.lng], {
-						opacity: 1,
-						icon: mntMarker,
-						riseOnHover: true
-					})
-					.addTo(map)
-					.bindPopup('');
-
-				// need to render this component as HTML to pass to the popup
-				// Create a new instance of the Child component
-				marker.on('click', function (e) {
-					const popup = leaflet.popup();
-
-					// Create a container div for your Svelte component
-					const container = document.createElement('div');
-
-					// Instantiate the Svelte component inside the container
-					new MntPopup({
-						target: container,
-						props: {
-							peakName: peak.name,
-							peakElevation: peak.elevation,
-							peakHieght: peak.gain,
-							link: peak.link,
-							img: peak.img,
-							video: peak.vid
-						}
-					});
-
-					popup.setContent(container);
-
-					marker.bindPopup(popup).openPopup();
-				});
-				// do not close on leaving so it can stay open until clicked or scrolled
-				// marker.on('mouseout', function (e) {
-				// 	marker.closePopup();
-				// });
-			});
-
-			mountainPeaks.montana.map((peak) => {
-				let marker = leaflet
-					.marker([peak.location.lat, peak.location.lng], {
-						opacity: 1,
-						icon: mntMarker,
-						riseOnHover: true
-					})
-					.addTo(map)
-					.bindPopup('');
-
-				// need to render this component as HTML to pass to the popup
-				// Create a new instance of the Child component
-				marker.on('click', function (e) {
-					const popup = leaflet.popup();
-
-					// Create a container div for your Svelte component
-					const container = document.createElement('div');
-
-					// Instantiate the Svelte component inside the container
-					new MntPopup({
-						target: container,
-						props: {
-							peakName: peak.name,
-							peakElevation: peak.elevation,
-							peakHieght: peak.gain,
-							link: peak.link,
-							img: peak.img,
-							video: peak.vid
-						}
-					});
-
-					popup.setContent(container);
-
-					marker.bindPopup(popup).openPopup();
-				});
-			});
+			placeMntMarker(mountainPeaks.colorado, mntMarker);
+			placeMntMarker(mountainPeaks.wyoming, mntMarker);
+			placeMntMarker(mountainPeaks.montana, mntMarker);
 
 			// track Jasons path after a few seconds
 			setTimeout(() => {
