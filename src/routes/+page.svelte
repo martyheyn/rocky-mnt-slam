@@ -19,11 +19,11 @@
 	let windowWidth: number;
 
 	// get current date
-	const date = new Date();
+	const lastUpdated = 'Sept 14 2023, 09:00:00 (EST)';
 
 	// TODO'S
 	// cleanup code
-	// deploy
+	// optimatize pictures to load faster
 	// add tooltip with multiple terrian types
 	// easter egg for pictures
 	// cluster mountain peaks
@@ -231,7 +231,7 @@
 				map.scrollWheelZoom.enable();
 				map.zoomControl = true;
 				showMntCounter = true;
-			}, 6000);
+			}, 4500);
 
 			// hide dot markers and popup unless zoomed in, keep mountains visible
 			map.on('zoomend', function () {
@@ -329,7 +329,7 @@
 					<button
 						class="bg-slate-700 [text-shadow:0_0_10px_#fff] w-12 h-10 flex justify-center items-center rounded-md"
 					>
-						<Countup initial={0} value={100} duration={2000} step={1} />
+						<Countup initial={0} value={94} duration={2000} step={1} />
 					</button>
 					<!-- <p class="text-lg shadow-xl font-semibold">Peaks</p> -->
 				</div>
@@ -355,8 +355,10 @@
 		</div>
 	{/if}
 
-	<div class="absolute bottom-0 right-0 z-40 bg-white">
-		<p class="text-xs text-slate-400 px-1 py-[1.5px]">Last updated: {date} | Maps by Leafet</p>
+	<div class="absolute bottom-0 right-0 z-[400] bg-white">
+		<p class="text-xs text-slate-400 px-1 py-[1.5px]">
+			Last updated: {lastUpdated} | Maps by Leafet
+		</p>
 	</div>
 </main>
 
@@ -366,7 +368,7 @@
 	.tracks-line {
 		stroke-dasharray: 1920;
 		stroke-dashoffset: 1920;
-		animation: dash 7s linear 1.5s forwards;
+		animation: dash 5s linear 1.5s forwards;
 	}
 
 	@keyframes dash {

@@ -26,6 +26,8 @@
 			videoPlayer.pause();
 		}
 	}
+
+	// TODO: do not blur while playing video
 </script>
 
 <div class="flex flex-col h-[195px]">
@@ -92,9 +94,9 @@
 </div>
 
 <Modal bind:showModal>
-	<div class="relative w-full h-full">
+	<div class={`relative w-full h-full`}>
 		<video
-			class="object-cover rounded-xl w-full h-full blur-[1px] hover:blur-0 transition-all ease-out duration-500"
+			class={`object-cover rounded-xl w-full h-full transition-all ease-out duration-500`}
 			bind:this={videoPlayer}
 			{controls}
 		>
