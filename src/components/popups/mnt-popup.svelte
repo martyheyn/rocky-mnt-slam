@@ -12,7 +12,7 @@
 
 	let showModal = false;
 	let videoPlayer: HTMLVideoElement;
-	let controls = false;
+	let controls = true;
 	let showVideoPlayerBtn = true;
 
 	const playVideo = () => {
@@ -102,10 +102,9 @@
 		>
 			<source src={video} type="video/mp4" />
 			<track kind="captions" />
-			<!-- play btn -->
 		</video>
 
-		{#if showVideoPlayerBtn}
+		<!-- {#if showVideoPlayerBtn}
 			<button
 				class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30"
 				on:click={playVideo}
@@ -116,6 +115,6 @@
 					class="w-24 h-24 bg-slate-100 hover:bg-slate-50 transition-all ease-out duration-300 rounded-full cursor-pointer bg-opacity-50 hover:bg-opacity-75"
 				/>
 			</button>
-		{/if}
+		{/if} -->
 	</div>
 </Modal>
