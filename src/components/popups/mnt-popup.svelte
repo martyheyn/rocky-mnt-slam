@@ -43,13 +43,12 @@
 				</SplideSlide>
 				<SplideSlide>
 					<video
-						class="object-cover rounded-xl w-full h-full max-h-[145px] min-h-[144px] p-1 blur-[.5px] hover:cursor-pointer"
-						on:click={() => (showModal = true)}
+						class="object-cover rounded-xl w-full h-full max-h-[145px] min-h-[144px] p-1 blur-[.5px]"
 					>
 						<source src={video} type="video/mp4" />
 						<track kind="captions" />
 					</video>
-					<!-- <div class="w-full h-full relative">
+					<div class="w-full h-full relative">
 						<button
 							class="absolute -top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30"
 							on:click={() => (showModal = true)}
@@ -60,7 +59,7 @@
 								class="w-16 h-16 bg-slate-100 hover:bg-slate-50 transition-all ease-out duration-300 rounded-full cursor-pointer bg-opacity-50 hover:bg-opacity-75"
 							/>
 						</button>
-					</div> -->
+					</div>
 				</SplideSlide>
 			</Splide>
 		{:else}
