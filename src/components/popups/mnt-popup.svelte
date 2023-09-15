@@ -44,6 +44,7 @@
 				<SplideSlide>
 					<video
 						class="object-cover rounded-xl w-full h-full max-h-[145px] min-h-[144px] p-1 blur-[.5px]"
+						preload="metadata"
 					>
 						<source src={video} type="video/mp4" />
 						<track kind="captions" />
