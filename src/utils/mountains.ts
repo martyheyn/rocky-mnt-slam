@@ -6,7 +6,7 @@ export const mountainPeaks = {
 			elevation: 14440,
 			location: { lat: 39.1178, lng: -106.4454 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Elbert',
-			img: 'colorado-mnts/Mt._Elbert.jpg',
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Mt._Elbert.jpg',
 			vid: ''
 		},
 
@@ -16,8 +16,8 @@ export const mountainPeaks = {
 			elevation: 14428,
 			location: { lat: 39.1875, lng: -106.4757 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Massive',
-			img: 'colorado-mnts/Mount_Massive.jpg',
-			vid: 'videos/colorado/co_massive.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Mount_Massive.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_massive.mp4'
 		},
 		{
 			name: 'Mount Harvard',
@@ -25,8 +25,8 @@ export const mountainPeaks = {
 			elevation: 14421,
 			location: { lat: 38.9244, lng: -106.3207 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Harvard',
-			img: 'colorado-mnts/Mount_Harvard_(Colorado)_2006-07-16.jpg',
-			vid: 'videos/colorado/co_harvard.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Mount_Harvard_(Colorado)_2006-07-16.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_harvard.mp4'
 		},
 		{
 			name: 'Blanca Peak',
@@ -34,7 +34,7 @@ export const mountainPeaks = {
 			elevation: 14351,
 			location: { lat: 37.5775, lng: -105.4856 },
 			link: 'https://en.wikipedia.org/wiki/Blanca_Peak',
-			img: 'colorado-mnts/Blanca_Peak.jpg',
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Blanca_Peak.jpg',
 			vid: ''
 		},
 		{
@@ -43,8 +43,8 @@ export const mountainPeaks = {
 			elevation: 14343,
 			location: { lat: 39.0294, lng: -106.4729 },
 			link: 'https://en.wikipedia.org/wiki/La_Plata_Peak',
-			img: 'colorado-mnts/La_Plata_Peak.jpg',
-			vid: 'videos/colorado/co_la_plata.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/La_Plata_Peak.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_la_plata.mp4'
 		},
 		{
 			name: 'Uncompahgre Peak',
@@ -52,8 +52,8 @@ export const mountainPeaks = {
 			elevation: 14321,
 			location: { lat: 38.0717, lng: -107.4621 },
 			link: 'https://en.wikipedia.org/wiki/Uncompahgre_Peak',
-			img: 'colorado-mnts/Uncompahgre_peak.jpg',
-			vid: 'videos/colorado/co_uncompahgre.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Uncompahgre_peak.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_uncompahgre.mp4'
 		},
 		{
 			name: 'Crestone Peak',
@@ -61,7 +61,7 @@ export const mountainPeaks = {
 			elevation: 14300,
 			location: { lat: 37.9669, lng: -105.5855 },
 			link: 'https://en.wikipedia.org/wiki/Crestone_Peak',
-			img: 'colorado-mnts/Crestone_peak_2.jpg',
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Crestone_peak_2.jpg',
 			vid: ''
 		},
 		{
@@ -71,7 +71,7 @@ export const mountainPeaks = {
 			location: { lat: 39.3515, lng: -106.1116 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Lincoln_(Colorado)',
 			img: '',
-			vid: 'videos/colorado/co_lincoln.mp4'
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_lincoln.mp4'
 		},
 		{
 			name: 'Castle Peak',
@@ -80,7 +80,7 @@ export const mountainPeaks = {
 			location: { lat: 39.0097, lng: -106.8614 },
 			link: 'https://en.wikipedia.org/wiki/Castle_Peak_(Colorado)',
 			img: '',
-			vid: 'videos/colorado/co_castle_peak.mp4'
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_castle_peak.mp4'
 		},
 		{
 			name: 'Grays Peak',
@@ -88,8 +88,8 @@ export const mountainPeaks = {
 			elevation: 14278,
 			location: { lat: 39.6339, lng: -105.8176 },
 			link: 'https://en.wikipedia.org/wiki/Grays_Peak',
-			img: 'colorado-mnts/Grays_Peak_Trail,_Colorado.jpg',
-			vid: 'videos/colorado/co_grays.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Grays_Peak_Trail,_Colorado.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_grays.mp4'
 		},
 		{
 			name: 'Mount Antero',
@@ -97,8 +97,8 @@ export const mountainPeaks = {
 			elevation: 14276,
 			location: { lat: 38.6741, lng: -106.2462 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Antero',
-			img: 'colorado-mnts/Mount_Antero_panoramio.jpg',
-			vid: 'videos/colorado/co_antero.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Mount_Antero_panoramio.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_antero.mp4'
 		},
 		{
 			name: 'Torreys Peak',
@@ -106,8 +106,8 @@ export const mountainPeaks = {
 			elevation: 14275,
 			location: { lat: 39.6428, lng: -105.8212 },
 			link: 'https://en.wikipedia.org/wiki/Torreys_Peak',
-			img: 'colorado-mnts/Torreys_Peak,_Colorado.jpg',
-			vid: 'videos/colorado/co_torreys.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Torreys_Peak,_Colorado.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_torreys.mp4'
 		},
 		{
 			name: 'Quandary Peak',
@@ -115,8 +115,8 @@ export const mountainPeaks = {
 			elevation: 14271,
 			location: { lat: 39.3973, lng: -106.1064 },
 			link: 'https://en.wikipedia.org/wiki/Quandary_Peak',
-			img: 'colorado-mnts/Torreys_Peak,_Colorado.jpg',
-			vid: 'videos/colorado/co_quandry.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Torreys_Peak,_Colorado.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_quandry.mp4'
 		},
 		{
 			name: 'Mount Evans',
@@ -124,8 +124,8 @@ export const mountainPeaks = {
 			elevation: 14271,
 			location: { lat: 39.5883, lng: -105.6438 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Evans',
-			img: 'colorado-mnts/Mount_Evans_United_States_(Unsplash).jpg',
-			vid: 'videos/colorado/co_evans.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Mount_Evans_United_States_(Unsplash).jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_evans.mp4'
 		},
 		{
 			name: 'Longs Peak',
@@ -133,7 +133,7 @@ export const mountainPeaks = {
 			elevation: 14259,
 			location: { lat: 40.255, lng: -105.6151 },
 			link: 'https://en.wikipedia.org/wiki/Longs_Peak',
-			img: 'colorado-mnts/Longs_Peak_with_Lenticular_Clouds_Rocky_Mountain_National_Park.jpg',
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Longs_Peak_with_Lenticular_Clouds_Rocky_Mountain_National_Park.jpg',
 			vid: ''
 		},
 		{
@@ -143,7 +143,7 @@ export const mountainPeaks = {
 			location: { lat: 37.8391, lng: -107.9916 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Wilson_(Colorado)',
 			img: '',
-			vid: 'videos/colorado/co_wilson.mp4'
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_wilson.mp4'
 		},
 		{
 			name: 'Mount Shavano',
@@ -152,7 +152,7 @@ export const mountainPeaks = {
 			location: { lat: 38.6192, lng: -106.2393 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Shavano',
 			img: '',
-			vid: 'videos/colorado/co_shavano.mp4'
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_shavano.mp4'
 		},
 		{
 			name: 'Mount Princeton',
@@ -160,8 +160,8 @@ export const mountainPeaks = {
 			elevation: 14204,
 			location: { lat: 38.7492, lng: -106.2424 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Princeton',
-			img: 'colorado-mnts/Mount_Princeton,_CO_2009-07.jpg',
-			vid: 'videos/colorado/co_princeton.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Mount_Princeton,_CO_2009-07.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_princeton.mp4'
 		},
 		{
 			name: 'Mount Belford',
@@ -169,8 +169,8 @@ export const mountainPeaks = {
 			elevation: 14203,
 			location: { lat: 38.9607, lng: -106.3607 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Belford',
-			img: 'colorado-mnts/Mount_Belford_view.jpg',
-			vid: 'videos/colorado/co_belford.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Mount_Belford_view.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_belford.mp4'
 		},
 		{
 			name: 'Crestone Needle',
@@ -178,7 +178,7 @@ export const mountainPeaks = {
 			elevation: 14203,
 			location: { lat: 37.9647, lng: -105.5766 },
 			link: 'https://en.wikipedia.org/wiki/Crestone_Needle',
-			img: 'colorado-mnts/Crestone_Needle_viewed_from_Humboldt_Peaks_West_Ridge.jpg',
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Crestone_Needle_viewed_from_Humboldt_Peaks_West_Ridge.jpg',
 			vid: ''
 		},
 		{
@@ -187,8 +187,8 @@ export const mountainPeaks = {
 			elevation: 14200,
 			location: { lat: 38.8442, lng: -106.3138 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Yale',
-			img: 'colorado-mnts/Mount_Yale_from_Denny_Creek_trailhead,_Cottonwood_Pass_road.jpg',
-			vid: 'videos/colorado/co_yale.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Mount_Yale_from_Denny_Creek_trailhead,_Cottonwood_Pass_road.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_yale.mp4'
 		},
 		{
 			name: 'Mount Bross',
@@ -196,8 +196,8 @@ export const mountainPeaks = {
 			elevation: 14178,
 			location: { lat: 39.3354, lng: -106.1077 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Bross',
-			img: 'colorado-mnts/Mount_Bross_panoramio.jpg',
-			vid: 'videos/colorado/co_bross.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Mount_Bross_panoramio.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_bross.mp4'
 		},
 		{
 			name: 'Kit Carson Mountain',
@@ -205,7 +205,7 @@ export const mountainPeaks = {
 			elevation: 14171,
 			location: { lat: 37.9797, lng: -105.6026 },
 			link: 'https://en.wikipedia.org/wiki/Kit_Carson_Peak',
-			img: 'colorado-mnts/Kit_Carson_Mountain_panoramio.jpg',
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Kit_Carson_Mountain_panoramio.jpg',
 			vid: ''
 		},
 		{
@@ -214,7 +214,7 @@ export const mountainPeaks = {
 			elevation: 14163,
 			location: { lat: 39.0708, lng: -106.989 },
 			link: 'https://en.wikipedia.org/wiki/Maroon_Bells',
-			img: 'colorado-mnts/Maroon_Bells_(11553)a.jpg',
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Maroon_Bells_(11553)a.jpg',
 			vid: ''
 		},
 		{
@@ -223,8 +223,8 @@ export const mountainPeaks = {
 			elevation: 14162,
 			location: { lat: 38.6255, lng: -106.2509 },
 			link: 'https://en.wikipedia.org/wiki/Tabeguache_Peak',
-			img: 'colorado-mnts/Tabeguache_Peak_Sawatch_Range_Chaffee_County_Colorado_USA_01.jpg',
-			vid: 'videos/colorado/co_tabeguache.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Tabeguache_Peak_Sawatch_Range_Chaffee_County_Colorado_USA_01.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_tabeguache.mp4'
 		},
 		{
 			name: 'Mount Oxford',
@@ -232,8 +232,8 @@ export const mountainPeaks = {
 			elevation: 14160,
 			location: { lat: 38.9648, lng: -106.3388 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Oxford_(Colorado)',
-			img: 'colorado-mnts/Mount_Oxford_(Colorado)_2006-07-16.jpg',
-			vid: 'videos/colorado/co_oxford.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Mount_Oxford_(Colorado)_2006-07-16.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_oxford.mp4'
 		},
 		{
 			name: 'Mount Sneffels',
@@ -241,8 +241,8 @@ export const mountainPeaks = {
 			elevation: 14158,
 			location: { lat: 38.0038, lng: -107.7923 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Sneffels',
-			img: 'colorado-mnts/Mount_Sneffels.jpg',
-			vid: 'videos/colorado/co_sneffels.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Mount_Sneffels.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_sneffels.mp4'
 		},
 		{
 			name: 'Mount Democrat',
@@ -250,8 +250,8 @@ export const mountainPeaks = {
 			elevation: 14155,
 			location: { lat: 39.3396, lng: -106.14 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Democrat',
-			img: 'colorado-mnts/Mount_Democrat_from_Climax_Mine.jpg',
-			vid: 'videos/colorado/co_democrat.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Mount_Democrat_from_Climax_Mine.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_democrat.mp4'
 		},
 		{
 			name: 'Capitol Peak',
@@ -259,8 +259,8 @@ export const mountainPeaks = {
 			elevation: 14137,
 			location: { lat: 39.1503, lng: -107.0829 },
 			link: 'https://en.wikipedia.org/wiki/Capitol_Peak_(Colorado)',
-			img: 'colorado-mnts/Capitol_Peak_CO.jpg',
-			vid: 'videos/colorado/co_capital.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Capitol_Peak_CO.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_capital.mp4'
 		},
 		{
 			name: 'Pikes Peak',
@@ -268,7 +268,7 @@ export const mountainPeaks = {
 			elevation: 14115,
 			location: { lat: 38.8405, lng: -105.0442 },
 			link: 'https://en.wikipedia.org/wiki/Pikes_Peak',
-			img: 'colorado-mnts/Pikespeak.jpg',
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Pikespeak.jpg',
 			vid: ''
 		},
 		{
@@ -277,8 +277,8 @@ export const mountainPeaks = {
 			elevation: 14099,
 			location: { lat: 39.1188, lng: -107.0665 },
 			link: 'https://en.wikipedia.org/wiki/Snowmass_Mountain',
-			img: 'colorado-mnts/Snowmass_mountain_April_2018_top_of_Bull_Run.jpg',
-			vid: 'videos/colorado/co_snowmass.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Snowmass_mountain_April_2018_top_of_Bull_Run.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_snowmass.mp4'
 		},
 		{
 			name: 'Windom Peak',
@@ -286,8 +286,8 @@ export const mountainPeaks = {
 			elevation: 14093,
 			location: { lat: 37.6212, lng: -107.5919 },
 			link: 'https://en.wikipedia.org/wiki/Windom_Peak',
-			img: 'colorado-mnts/Windom_Peak_and_Jupiter_Mountain.jpg',
-			vid: 'videos/colorado/co_windom.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Windom_Peak_and_Jupiter_Mountain.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_windom.mp4'
 		},
 		{
 			name: 'Mount Eolus',
@@ -295,8 +295,8 @@ export const mountainPeaks = {
 			elevation: 14090,
 			location: { lat: 37.6218, lng: -107.6227 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Eolus',
-			img: 'colorado-mnts/Mount_Eolus_summit.jpg',
-			vid: 'videos/colorado/co_eolus.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Mount_Eolus_summit.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_eolus.mp4'
 		},
 		{
 			name: 'Challenger Point',
@@ -304,7 +304,7 @@ export const mountainPeaks = {
 			elevation: 14087,
 			location: { lat: 37.9804, lng: -105.6066 },
 			link: 'https://en.wikipedia.org/wiki/Challenger_Point',
-			img: 'colorado-mnts/Challenger_point.jpg',
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Challenger_point.jpg',
 			vid: ''
 		},
 		{
@@ -313,8 +313,8 @@ export const mountainPeaks = {
 			elevation: 14077,
 			location: { lat: 38.9039, lng: -106.2975 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Columbia_(Colorado)',
-			img: 'colorado-mnts/Mount_Columbia_from_along_US-24,_a_few_miles_N_NW_of_Buena_Vista.jpg',
-			vid: 'videos/colorado/co_columbia.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Mount_Columbia_from_along_US-24,_a_few_miles_N_NW_of_Buena_Vista.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_columbia.mp4'
 		},
 		{
 			name: 'Missouri Mountain',
@@ -322,8 +322,8 @@ export const mountainPeaks = {
 			elevation: 14074,
 			location: { lat: 38.9476, lng: -106.3785 },
 			link: 'https://en.wikipedia.org/wiki/Missouri_Mountain',
-			img: 'colorado-mnts/Missouri_Mountain_(Colorado)_2006-07-16.jpg',
-			vid: 'videos/colorado/co_missouri.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Missouri_Mountain_(Colorado)_2006-07-16.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_missouri.mp4'
 		},
 		{
 			name: 'Humboldt Peak',
@@ -331,7 +331,7 @@ export const mountainPeaks = {
 			elevation: 14070,
 			location: { lat: 37.9762, lng: -105.5552 },
 			link: 'https://en.wikipedia.org/wiki/Humboldt_Peak_(Colorado)',
-			img: 'colorado-mnts/Humboldt_peak.jpg',
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Humboldt_peak.jpg',
 			vid: ''
 		},
 		{
@@ -340,8 +340,8 @@ export const mountainPeaks = {
 			elevation: 14065,
 			location: { lat: 39.5826, lng: -105.6688 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Bierstadt',
-			img: 'colorado-mnts/Mount_Bierstadt_Sawtooth_Mount_Evans_(10579983656).jpg',
-			vid: 'videos/colorado/co_bierstadt.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Mount_Bierstadt_Sawtooth_Mount_Evans_(10579983656).jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_bierstadt.mp4'
 		},
 		{
 			name: 'Sunlight Peak',
@@ -349,8 +349,8 @@ export const mountainPeaks = {
 			elevation: 14065,
 			location: { lat: 37.6274, lng: -107.5959 },
 			link: 'https://en.wikipedia.org/wiki/Sunlight_Peak',
-			img: 'colorado-mnts/Sunlight_Peak_w.jpg',
-			vid: 'videos/colorado/co_sunlight.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Sunlight_Peak_w.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_sunlight.mp4'
 		},
 		{
 			name: 'Handies Peak',
@@ -358,8 +358,8 @@ export const mountainPeaks = {
 			elevation: 14058,
 			location: { lat: 37.913, lng: -107.5044 },
 			link: 'https://en.wikipedia.org/wiki/Handies_Peak',
-			img: 'colorado-mnts/Handies_Peak_WSA_(9464918585).jpg',
-			vid: 'videos/colorado/co_handies.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Handies_Peak_WSA_(9464918585).jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_handies.mp4'
 		},
 		{
 			name: 'Culebra Peak',
@@ -367,7 +367,7 @@ export const mountainPeaks = {
 			elevation: 14053,
 			location: { lat: 37.1224, lng: -105.1858 },
 			link: 'https://en.wikipedia.org/wiki/Culebra_Peak',
-			img: 'colorado-mnts/Culebra_Peak_closeup.jpg',
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Culebra_Peak_closeup.jpg',
 			vid: ''
 		},
 		{
@@ -376,7 +376,7 @@ export const mountainPeaks = {
 			elevation: 14048,
 			location: { lat: 37.5826, lng: -105.4927 },
 			link: 'https://en.wikipedia.org/wiki/Ellingwood_Point',
-			img: 'colorado-mnts/Ellingwood_Point_Colorado.jpg',
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Ellingwood_Point_Colorado.jpg',
 			vid: ''
 		},
 		{
@@ -385,7 +385,7 @@ export const mountainPeaks = {
 			elevation: 14048,
 			location: { lat: 37.5837, lng: -105.4449 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Lindsey',
-			img: 'colorado-mnts/Mount_Lindsey_and_Iron_Nipple.jpg',
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Mount_Lindsey_and_Iron_Nipple.jpg',
 			vid: ''
 		},
 		{
@@ -394,7 +394,7 @@ export const mountainPeaks = {
 			elevation: 14043,
 			location: { lat: 37.5666, lng: -105.4972 },
 			link: 'https://en.wikipedia.org/wiki/Little_Bear_Peak',
-			img: 'colorado-mnts/Little_Bear_Peak_Hamilton_Peak_and_Mount_Lindsey_panoramio.jpg',
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Little_Bear_Peak_Hamilton_Peak_and_Mount_Lindsey_panoramio.jpg',
 			vid: ''
 		},
 		{
@@ -404,7 +404,7 @@ export const mountainPeaks = {
 			location: { lat: 39.225, lng: -106.1699 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Sherman',
 			img: '',
-			vid: 'videos/colorado/co_sherman.mp4'
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_sherman.mp4'
 		},
 		{
 			name: 'Redcloud Peak',
@@ -412,8 +412,8 @@ export const mountainPeaks = {
 			elevation: 14041,
 			location: { lat: 37.941, lng: -107.4219 },
 			link: 'https://en.wikipedia.org/wiki/Redcloud_Peak',
-			img: 'colorado-mnts/Redcloud_Peak_Summit_Colorado.jpg',
-			vid: 'videos/colorado/co_redcloud.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Redcloud_Peak_Summit_Colorado.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_redcloud.mp4'
 		},
 		{
 			name: 'Pyramid Peak',
@@ -422,7 +422,7 @@ export const mountainPeaks = {
 			location: { lat: 39.0717, lng: -106.9502 },
 			link: 'https://en.wikipedia.org/wiki/Pyramid_Peak_(Colorado)',
 			img: '',
-			vid: 'videos/colorado/co_pyramid.mp4'
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_pyramid.mp4'
 		},
 		{
 			name: 'Wilson Peak',
@@ -430,8 +430,8 @@ export const mountainPeaks = {
 			elevation: 14023,
 			location: { lat: 37.8603, lng: -107.9847 },
 			link: 'https://en.wikipedia.org/wiki/Wilson_Peak',
-			img: 'colorado-mnts/Wilson_Peak_near_Telluride.jpg',
-			vid: 'videos/colorado/co_wilson.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Wilson_Peak_near_Telluride.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_wilson.mp4'
 		},
 		{
 			name: 'San Luis Peak',
@@ -439,8 +439,8 @@ export const mountainPeaks = {
 			elevation: 14022,
 			location: { lat: 37.9868, lng: -106.9313 },
 			link: 'https://en.wikipedia.org/wiki/San_Luis_Peak',
-			img: 'colorado-mnts/San_Luis_Peak_San_Juan_Mountains_Saguache_County_Colorado_USA_03.jpg',
-			vid: 'videos/colorado/co_san_luis.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/San_Luis_Peak_San_Juan_Mountains_Saguache_County_Colorado_USA_03.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_san_luis.mp4'
 		},
 		{
 			name: 'Wetterhorn Peak',
@@ -448,8 +448,8 @@ export const mountainPeaks = {
 			elevation: 14021,
 			location: { lat: 38.0607, lng: -107.5109 },
 			link: 'https://en.wikipedia.org/wiki/Wetterhorn_Peak',
-			img: 'colorado-mnts/Wetterhorn_peak.jpg',
-			vid: 'videos/colorado/co_wetterhorn.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Wetterhorn_peak.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_wetterhorn.mp4'
 		},
 		{
 			name: 'Mount of the Holy Cross',
@@ -457,8 +457,8 @@ export const mountainPeaks = {
 			elevation: 14011,
 			location: { lat: 39.4668, lng: -106.4817 },
 			link: 'https://en.wikipedia.org/wiki/Mount_of_the_Holy_Cross',
-			img: 'colorado-mnts/Mount_of_the_Holy_Cross,_2009.jpg',
-			vid: 'videos/colorado/co_holy_cross.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Mount_of_the_Holy_Cross,_2009.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_holy_cross.mp4'
 		},
 		{
 			name: 'Huron Peak',
@@ -466,8 +466,8 @@ export const mountainPeaks = {
 			elevation: 14010,
 			location: { lat: 38.9455, lng: -106.4381 },
 			link: 'https://en.wikipedia.org/wiki/Huron_Peak',
-			img: 'colorado-mnts/Huron_Peak_(48458753091).jpg',
-			vid: 'videos/colorado/co_huron.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Huron_Peak_(48458753091).jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_huron.mp4'
 		},
 		{
 			name: 'Sunshine Peak',
@@ -475,8 +475,8 @@ export const mountainPeaks = {
 			elevation: 14007,
 			location: { lat: 37.9228, lng: -107.4256 },
 			link: 'https://en.wikipedia.org/wiki/Sunshine_Peak',
-			img: 'colorado-mnts/Sunshine_Peak.jpg',
-			vid: 'videos/colorado/co_sunshine.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Sunshine_Peak.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/co_sunshine.mp4'
 		}
 	],
 	wyoming: [
@@ -486,8 +486,8 @@ export const mountainPeaks = {
 			gain: 2552,
 			location: { lat: 42.708611, lng: -109.128056 },
 			link: 'https://en.wikipedia.org/wiki/Wind_River_Peak',
-			img: 'wyoming-mnts/Wind_River_Peak_2010.jpg',
-			vid: 'videos/wyoming/wy_wind_river.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Wind_River_Peak_2010.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_wind_river.mp4'
 		},
 		{
 			name: 'Harrower Peak',
@@ -495,8 +495,8 @@ export const mountainPeaks = {
 			gain: 932,
 			location: { lat: 43.093611, lng: -109.595833 },
 			link: 'https://en.wikipedia.org/wiki/Harrower_Peak',
-			img: 'wyoming-mnts/Harrower_Peak.jpg',
-			vid: 'videos/wyoming/wy_harrower.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Harrower_Peak.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_harrower.mp4'
 		},
 		{
 			name: 'Knife Point',
@@ -505,7 +505,7 @@ export const mountainPeaks = {
 			location: { lat: 43.099722, lng: -109.576944 },
 			link: 'https://en.wikipedia.org/wiki/Knife_Point_Mountain',
 			img: '',
-			vid: 'videos/wyoming/wy_knife_point.mp4'
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_knife_point.mp4'
 		},
 		{
 			name: 'Bete Noire',
@@ -523,7 +523,7 @@ export const mountainPeaks = {
 			location: { lat: 43.119444, lng: -109.603333 },
 			link: 'https://en.wikipedia.org/wiki/Jackson_Peak_(Fremont_County%2C_Wyoming)',
 			img: '',
-			vid: 'videos/wyoming/wy_jackson.mp4'
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_jackson.mp4'
 		},
 		{
 			name: 'Fremont Peak',
@@ -531,8 +531,8 @@ export const mountainPeaks = {
 			gain: 1184,
 			location: { lat: 43.124722, lng: -109.618056 },
 			link: 'https://en.wikipedia.org/wiki/Fremont_Peak_(Wyoming)',
-			img: 'wyoming-mnts/Wind_River_Range_July_2017_1.jpg',
-			vid: 'videos/wyoming/wy_fremont.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Wind_River_Range_July_2017_1.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_fremont.mp4'
 		},
 		{
 			name: 'Mount Sacagawea',
@@ -540,8 +540,8 @@ export const mountainPeaks = {
 			gain: 409,
 			location: { lat: 43.136667, lng: -109.625 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Sacagawea',
-			img: 'wyoming-mnts/Mt_Sacagawea_from_Sacagawea_Glacier.jpg',
-			vid: 'videos/wyoming/wy_sacagawea.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Mt_Sacagawea_from_Sacagawea_Glacier.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_sacagawea.mp4'
 		},
 		{
 			name: 'Mount Helen',
@@ -549,8 +549,8 @@ export const mountainPeaks = {
 			gain: 820,
 			location: { lat: 43.151111, lng: -109.631111 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Helen_(Wyoming)',
-			img: 'wyoming-mnts/Mount_Helen_WY.jpg',
-			vid: 'videos/wyoming/wy_helen.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Mount_Helen_WY.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_helen.mp4'
 		},
 		{
 			name: 'Spearhead Pinnacle',
@@ -559,7 +559,7 @@ export const mountainPeaks = {
 			location: { lat: 43.15801, lng: -109.63 },
 			link: 'https://www.summitpost.org/spearhead-pinnacle/1054041',
 			img: '',
-			vid: 'videos/wyoming/wy_spearhead_pinnacle.mp4'
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_spearhead_pinnacle.mp4'
 		},
 		{
 			name: 'Mount Warren',
@@ -568,7 +568,7 @@ export const mountainPeaks = {
 			location: { lat: 43.163611, lng: -109.628056 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Warren',
 			img: '',
-			vid: 'videos/wyoming/wy_warren.mp4'
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_warren.mp4'
 		},
 		{
 			name: 'Turret Peak',
@@ -577,7 +577,7 @@ export const mountainPeaks = {
 			location: { lat: 43.164722, lng: -109.618889 },
 			link: 'https://en.wikipedia.org/wiki/Turret_Peak_(Wyoming)',
 			img: '',
-			vid: 'videos/wyoming/wy_turret.mp4'
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_turret.mp4'
 		},
 		{
 			name: 'Sunbeam Peak',
@@ -586,7 +586,7 @@ export const mountainPeaks = {
 			location: { lat: 43.170556, lng: -109.617778 },
 			link: 'https://en.wikipedia.org/wiki/Sunbeam_Peak',
 			img: '',
-			vid: 'videos/wyoming/wy_sunbeam.mp4'
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_sunbeam.mp4'
 		},
 		{
 			name: 'Mount Febbas',
@@ -595,7 +595,7 @@ export const mountainPeaks = {
 			location: { lat: 43.176111, lng: -109.601667 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Febbas',
 			img: '',
-			vid: 'videos/wyoming/wy_febbas.mp4'
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_febbas.mp4'
 		},
 		{
 			name: 'Pinnacle Ridge',
@@ -604,7 +604,7 @@ export const mountainPeaks = {
 			location: { lat: 43.173333, lng: -109.654444 },
 			link: 'https://en.wikipedia.org/wiki/Pinnacle_Ridge',
 			img: '',
-			vid: 'videos/wyoming/wy_pinnacle.mp4'
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_pinnacle.mp4'
 		},
 		{
 			name: 'Mount Woodrow Wilson',
@@ -612,8 +612,8 @@ export const mountainPeaks = {
 			gain: 502,
 			location: { lat: 43.166944, lng: -109.651667 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Woodrow_Wilson',
-			img: 'wyoming-mnts/Mount_Woodrow_Wilson.jpg',
-			vid: 'videos/wyoming/wy_woodrow_wilson.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Mount_Woodrow_Wilson.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_woodrow_wilson.mp4'
 		},
 		{
 			name: 'The Sphinx',
@@ -622,7 +622,7 @@ export const mountainPeaks = {
 			location: { lat: 43.165556, lng: -109.648056 },
 			link: 'https://en.wikipedia.org/wiki/The_Sphinx_(Wyoming)',
 			img: '',
-			vid: 'videos/wyoming/wy_sphinx.mp4'
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_sphinx.mp4'
 		},
 		{
 			name: 'Twin Peaks East',
@@ -630,8 +630,8 @@ export const mountainPeaks = {
 			gain: 385,
 			location: { lat: 43.16, lng: -109.658611 },
 			link: 'https://en.wikipedia.org/wiki/Twin_Peaks_(Wyoming)',
-			img: 'wyoming-mnts/Twin_Peaks_and_Mammoth_Glacier.jpg',
-			vid: 'videos/wyoming/wy_twin_peak_east.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Twin_Peaks_and_Mammoth_Glacier.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_twin_peak_east.mp4'
 		},
 		{
 			name: 'Twin Peaks West',
@@ -639,8 +639,8 @@ export const mountainPeaks = {
 			gain: 385,
 			location: { lat: 43.16, lng: -109.668611 },
 			link: 'https://en.wikipedia.org/wiki/Twin_Peaks_(Wyoming)',
-			img: 'wyoming-mnts/Twin_Peaks_and_Mammoth_Glacier.jpg',
-			vid: 'videos/wyoming/wy_twin_peak_west.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Twin_Peaks_and_Mammoth_Glacier.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_twin_peak_west.mp4'
 		},
 		{
 			name: 'Split Mountain',
@@ -648,8 +648,8 @@ export const mountainPeaks = {
 			gain: 595,
 			location: { lat: 43.164167, lng: -109.6725 },
 			link: 'https://en.wikipedia.org/wiki/Split_Mountain_(Wyoming)',
-			img: 'wyoming-mnts/Split_Mountain_(Wyoming).jpg',
-			vid: 'videos/wyoming/wy_split.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Split_Mountain_(Wyoming).jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_split.mp4'
 		},
 		{
 			name: 'Mount Whitecap',
@@ -657,8 +657,8 @@ export const mountainPeaks = {
 			gain: 580,
 			location: { lat: 43.168611, lng: -109.692222 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Whitecap',
-			img: 'wyoming-mnts/Mount_Whitecap_and_Ladd_Peak.jpg',
-			vid: 'videos/wyoming/wy_whitecap.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Mount_Whitecap_and_Ladd_Peak.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_whitecap.mp4'
 		},
 		{
 			name: 'Bow Mountain',
@@ -666,8 +666,8 @@ export const mountainPeaks = {
 			gain: 660,
 			location: { lat: 43.144167, lng: -109.683889 },
 			link: 'https://en.wikipedia.org/wiki/Bow_Mountain',
-			img: 'wyoming-mnts/Bow_Mountain.jpg',
-			vid: 'videos/wyoming/wy_bow.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Bow_Mountain.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_bow.mp4'
 		},
 		{
 			name: 'Henderson Peak',
@@ -675,8 +675,8 @@ export const mountainPeaks = {
 			gain: 755,
 			location: { lat: 43.1375, lng: -109.661111 },
 			link: 'https://en.wikipedia.org/wiki/Henderson_Peak',
-			img: 'wyoming-mnts/Henderson_Peak.jpg',
-			vid: 'videos/wyoming/wy_henderson.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Henderson_Peak.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_henderson.mp4'
 		},
 		{
 			name: 'American Legion Peak',
@@ -685,7 +685,7 @@ export const mountainPeaks = {
 			location: { lat: 43.147222, lng: -109.665833 },
 			link: 'https://en.wikipedia.org/wiki/American_Legion_Peak',
 			img: '',
-			vid: 'videos/wyoming/wy_american_legion.mp4'
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_american_legion.mp4'
 		},
 		{
 			name: 'Gannett Peak',
@@ -693,8 +693,8 @@ export const mountainPeaks = {
 			gain: 7076,
 			location: { lat: 43.184202, lng: -109.654234 },
 			link: 'https://en.wikipedia.org/wiki/Gannett_Peak',
-			img: 'wyoming-mnts/Gannett_Peak.jpg',
-			vid: 'videos/wyoming/wy_gannett.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Gannett_Peak.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_gannett.mp4'
 		},
 		{
 			name: 'Mount Koven',
@@ -703,7 +703,7 @@ export const mountainPeaks = {
 			location: { lat: 43.195, lng: -109.6575 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Koven_(Wyoming)',
 			img: '',
-			vid: 'videos/wyoming/wy_koven.mp4'
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_koven.mp4'
 		},
 		{
 			name: 'Desolation Peak',
@@ -712,7 +712,7 @@ export const mountainPeaks = {
 			location: { lat: 43.201667, lng: -109.679444 },
 			link: 'https://en.wikipedia.org/wiki/Desolation_Peak_(Wyoming)',
 			img: '',
-			vid: 'videos/wyoming/wy_desolation.mp4'
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_desolation.mp4'
 		},
 		{
 			name: 'Bastion Peak',
@@ -721,7 +721,7 @@ export const mountainPeaks = {
 			location: { lat: 43.206111, lng: -109.665 },
 			link: 'https://en.wikipedia.org/wiki/Bastion_Peak',
 			img: '',
-			vid: 'videos/wyoming/wy_bastion.mp4'
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_bastion.mp4'
 		},
 		{
 			name: 'Grasshopper Peak',
@@ -739,7 +739,7 @@ export const mountainPeaks = {
 			location: { lat: 43.215278, lng: -109.675833 },
 			link: 'https://en.wikipedia.org/wiki/Flagstone_Peak_(Fremont_County_Wyoming)',
 			img: '',
-			vid: 'videos/wyoming/wy_flagstone.mp4'
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_flagstone.mp4'
 		},
 		{
 			name: 'Klondike Peak',
@@ -747,9 +747,9 @@ export const mountainPeaks = {
 			gain: 664,
 			location: { lat: 43.236389, lng: -109.688056 },
 			link: 'https://en.wikipedia.org/wiki/Klondike_Peak',
-			img: 'wyoming-mnts/Sourdough_Glacier_with_Klondike_Peak.jpg',
-			vid: 'videos/wyoming/wy_klondike_1.mp4'
-			// videos/wyoming/wy_klondike_2.mp4
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Sourdough_Glacier_with_Klondike_Peak.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_klondike_1.mp4'
+			// https://d3cscezb7a84vr.cloudfront.net/wy_klondike_2.mp4
 		},
 		{
 			name: 'Pedestal Peak - soft ranked',
@@ -766,8 +766,8 @@ export const mountainPeaks = {
 			gain: 4071,
 			location: { lat: 43.309816, lng: -109.67241 },
 			link: 'https://www.peakbagger.com/peak.aspx?pid=5337',
-			img: 'wyoming-mnts/p18138L.jpg',
-			vid: 'videos/wyoming/wy_downs.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/p18138L.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_downs.mp4'
 		},
 		{
 			name: 'South Downs Mountain',
@@ -776,7 +776,7 @@ export const mountainPeaks = {
 			location: { lat: 43.284765, lng: -109.685333 },
 			link: 'https://www.peakbagger.com/peak.aspx?pid=5338',
 			img: '',
-			vid: 'videos/wyoming/wy_south_downs.mp4'
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_south_downs.mp4'
 		},
 		{
 			name: 'Grand Teton',
@@ -784,8 +784,8 @@ export const mountainPeaks = {
 			gain: 6530,
 			location: { lat: 43.741208, lng: -110.802414 },
 			link: 'https://en.wikipedia.org/wiki/Grand_Teton',
-			img: 'wyoming-mnts/Grand_Teton_GTNP1.jpg',
-			vid: 'videos/wyoming/wy_grand_teton.mp4'
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Grand_Teton_GTNP1.jpg',
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_grand_teton.mp4'
 		},
 		{
 			name: 'Francs Peak',
@@ -793,7 +793,7 @@ export const mountainPeaks = {
 			gain: 4056,
 			location: { lat: 43.961389, lng: -109.330833 },
 			link: 'https://en.wikipedia.org/wiki/Francs_Peak',
-			img: 'wyoming-mnts/Francs_Peak.jpg',
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Francs_Peak.jpg',
 			vid: ''
 		},
 		{
@@ -802,7 +802,7 @@ export const mountainPeaks = {
 			gain: 7067,
 			location: { lat: 44.3821, lng: -107.173914 },
 			link: 'https://en.wikipedia.org/wiki/Cloud_Peak',
-			img: 'wyoming-mnts/Cloud_Peak_viewed_from_Paint_Rock_Creek.jpg',
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Cloud_Peak_viewed_from_Paint_Rock_Creek.jpg',
 			vid: ''
 		},
 		{
@@ -811,7 +811,7 @@ export const mountainPeaks = {
 			gain: 645,
 			location: { lat: 44.402778, lng: -107.175556 },
 			link: 'https://en.wikipedia.org/wiki/Black_Tooth_Mountain',
-			img: 'wyoming-mnts/Talons_Pictures_327.jpg',
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Talons_Pictures_327.jpg',
 			vid: ''
 		}
 	],
@@ -822,7 +822,7 @@ export const mountainPeaks = {
 			gain: 1044,
 			location: { lat: 45.048333, lng: -109.526389 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Rearguard',
-			img: 'montana-mnts/Granite_Peak_Montana_2.jpg',
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Granite_Peak_Montana_2.jpg',
 			vid: ''
 		},
 		{
@@ -849,7 +849,7 @@ export const mountainPeaks = {
 			gain: 3767,
 			location: { lat: 45.060794, lng: -109.568163 },
 			link: 'https://www.peakbagger.com/peak.aspx?pid=5272',
-			img: 'montana-mnts/The_Beartooth_Mountains_from_Buffalo_Plateau_Trail.jpg',
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/The_Beartooth_Mountains_from_Buffalo_Plateau_Trail.jpg',
 			vid: ''
 		},
 		{
@@ -894,7 +894,7 @@ export const mountainPeaks = {
 			gain: 582,
 			location: { lat: 45.106389, lng: -109.609444 },
 			link: 'https://en.wikipedia.org/wiki/Sundance_Mountain',
-			img: 'montana-mnts/Sundance_Mountain.jpg',
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Sundance_Mountain.jpg',
 			vid: ''
 		},
 		{
@@ -903,7 +903,7 @@ export const mountainPeaks = {
 			gain: 2652,
 			location: { lat: 45.098889, lng: -109.630556 },
 			link: 'https://en.wikipedia.org/wiki/Castle_Mountains_(Montana)',
-			img: 'montana-mnts/CastleMountainsWesternFace2010.jpg',
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/CastleMountainsWesternFace2010.jpg',
 			vid: ''
 		},
 		{
@@ -975,7 +975,7 @@ export const mountainPeaks = {
 			gain: 800,
 			location: { lat: 45.149722, lng: -109.849444 },
 			link: 'https://en.wikipedia.org/wiki/Glacier_Peak_(Park_County,_Montana)',
-			img: 'montana-mnts/The_Beartooth_Mountains_from_Buffalo_Plateau_Trail.jpg',
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/The_Beartooth_Mountains_from_Buffalo_Plateau_Trail.jpg',
 			vid: ''
 		},
 		{
@@ -1011,7 +1011,7 @@ export const mountainPeaks = {
 			gain: 4759,
 			location: { lat: 45.163427, lng: -109.807456 },
 			link: 'https://en.wikipedia.org/wiki/Granite_Peak_(Montana)',
-			img: 'montana-mnts/Spring_views_along_the_Beartooth_Highway_2021.jpg',
+			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Spring_views_along_the_Beartooth_Highway_2021.jpg',
 			vid: ''
 		},
 		{

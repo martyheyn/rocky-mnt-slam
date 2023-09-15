@@ -10,16 +10,13 @@
 <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-noninteractive-element-interactions -->
 
 <dialog
-	class="w-[85vw] md:w-[60vw] h-[90vh] md:h-[80vh] border-none p-0 backdrop:blur-lg rounded-md overflow-hidden"
+	class="w-[90vw] md:w-[60vw] h-[85vh] md:h-[80vh] border-none p-0 backdrop:blur-lg rounded-md overflow-hidden"
 	bind:this={dialog}
 	on:close={() => (showModal = false)}
 	on:click|self={() => dialog.close()}
 >
 	<!-- svelte-ignore a11y-no-static-element-interactions -->
-	<div
-		on:click|stopPropagation
-		class="px-1.5 py-2 pb-8 mt-[28px] md:mt-0 md:px-8 md:py-8 w-full h-full"
-	>
+	<div on:click|stopPropagation class="px-1.5 py-2 md:pb-8 md:px-8 md:py-8 w-full h-full">
 		<!-- svelte-ignore a11y-autofocus -->
 		<button
 			class=" absolute top-2.5 right-2.5 fill-slate-800 hover:fill-slate-600 hover:scale-[1.04] transition-all duration-1500 ease-linear"
