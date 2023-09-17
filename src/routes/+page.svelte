@@ -19,7 +19,7 @@
 	let windowWidth: number;
 
 	// get current date
-	const lastUpdated = 'Sept 14 2023, 09:00:00 (EST)';
+	const lastUpdated = 'Sept 17 2023, 13:27 (EST)';
 
 	// function to create mountain marker
 

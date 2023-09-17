@@ -794,7 +794,7 @@ export const mountainPeaks = {
 			location: { lat: 43.961389, lng: -109.330833 },
 			link: 'https://en.wikipedia.org/wiki/Francs_Peak',
 			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Francs_Peak.jpg',
-			vid: ''
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_francs.mp4'
 		},
 		{
 			name: 'Cloud Peak',
@@ -803,7 +803,7 @@ export const mountainPeaks = {
 			location: { lat: 44.3821, lng: -107.173914 },
 			link: 'https://en.wikipedia.org/wiki/Cloud_Peak',
 			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Cloud_Peak_viewed_from_Paint_Rock_Creek.jpg',
-			vid: ''
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_cloud.mp4'
 		},
 		{
 			name: 'Black Tooth ',
@@ -812,7 +812,7 @@ export const mountainPeaks = {
 			location: { lat: 44.402778, lng: -107.175556 },
 			link: 'https://en.wikipedia.org/wiki/Black_Tooth_Mountain',
 			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Talons_Pictures_327.jpg',
-			vid: ''
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/wy_black_tooth.mp4'
 		}
 	],
 	montana: [
