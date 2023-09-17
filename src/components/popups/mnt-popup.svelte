@@ -46,7 +46,7 @@
 						class="object-cover rounded-xl w-full h-full max-h-[145px] min-h-[144px] p-1 blur-[.5px]"
 						preload="metadata"
 					>
-						<source src={video} type="video/mp4" />
+						<source src={`${video}#t=0.001`} type="video/mp4" />
 						<track kind="captions" />
 					</video>
 					<div class="w-full h-full relative">
@@ -98,10 +98,11 @@
 	<div class={`relative w-full h-full`}>
 		<video
 			class={`object-cover rounded-xl w-full h-full transition-all ease-out duration-500`}
+			playsinline
 			bind:this={videoPlayer}
 			{controls}
 		>
-			<source src={video} type="video/mp4" />
+			<source src={`${video}#t=0.001`} type="video/mp4" />
 			<track kind="captions" />
 		</video>
 
