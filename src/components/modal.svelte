@@ -10,7 +10,7 @@
 <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-noninteractive-element-interactions -->
 
 <dialog
-	class="w-[90vw] md:w-[60vw] h-[75vh] sm:h-[80vh] border-none p-0 backdrop:blur-lg rounded-md overflow-hidden"
+	class="w-[90vw] md:w-[60vw] h-[75vh] sm:h-[80vh] border-none p-0 backdrop:blur-lg rounded-md overflow-x-hidden"
 	bind:this={dialog}
 	on:close={() => (showModal = false)}
 	on:click|self={() => dialog.close()}
