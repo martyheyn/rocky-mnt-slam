@@ -24,9 +24,9 @@
 
 		<p>
 			This hike is to be done entirely on foot. There is no offical trail for this voyage, meaning
-			hiking from mountain to mountain will consist not only trails, but also forest, service roads,
-			highways, etc. This route in its entirety has not been attempted up to this point, so there
-			will be a ton of off-trail and backcountry travel.
+			hiking from mountain to mountain will consist not only of trails, but also forest, service
+			roads, highways, etc. This route in its entirety has not been attempted up to this point, so
+			there will be a ton of off-trail and backcountry travel.
 		</p>
 
 		<div class="border-b border-b-slate-800 my-4" />
