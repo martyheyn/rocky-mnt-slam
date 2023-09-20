@@ -22,7 +22,7 @@
 	let showModal = false;
 
 	// get current date
-	const lastUpdated = 'Sept 17 2023, 13:27 (EST)';
+	const lastUpdated = 'Sept 20 2023, 07:11 (EST)';
 
 	// function to create mountain marker
 
