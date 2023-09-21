@@ -15,7 +15,7 @@
 				Colorado&#39;s <span class="font-bold text-slate-900 px-[1px]">58</span> 14,000-foot peaks
 			</li>
 			<li>
-				Wyoming&#39;s <span class="font-bold text-slate-900 px-[1px]">36</span> 13,000-foot peaks
+				Wyoming&#39;s <span class="font-bold text-slate-900 px-[1px]">37</span> 13,000-foot peaks
 			</li>
 			<li>
 				Montana&#39;s <span class="font-bold text-slate-900 px-[1px]">27</span> 12,000-foot peaks
