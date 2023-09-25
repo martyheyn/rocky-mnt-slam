@@ -22,7 +22,7 @@
 	let showModal = false;
 
 	// get current date
-	const lastUpdated = 'Sept 21 2023, 10:14 (EST)';
+	const lastUpdated = 'Sept 25 2023, 09:07 (EST)';
 
 	// function to create mountain marker
 
@@ -292,7 +292,7 @@
 					<button
 						class="bg-slate-700 [text-shadow:0_0_10px_#fff] w-12 h-10 flex justify-center items-center rounded-md"
 					>
-						<Countup initial={0} value={99} duration={2000} step={1} />
+						<Countup initial={0} value={103} duration={2000} step={1} />
 					</button>
 					<!-- <p class="text-lg shadow-xl font-semibold">Peaks</p> -->
 				</div>
