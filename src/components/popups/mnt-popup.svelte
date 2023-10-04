@@ -94,6 +94,7 @@
 	</div>
 </div>
 
+<!-- modal for video -->
 <Modal bind:showModal>
 	<div class={`relative w-full h-full`}>
 		<video
