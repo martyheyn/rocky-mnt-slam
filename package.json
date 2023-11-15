@@ -42,6 +42,7 @@
 	"type": "module",
 	"dependencies": {
 		"@splidejs/svelte-splide": "^0.2.9",
+		"@vercel/analytics": "^1.1.1",
 		"svelte-countup": "^0.2.6"
 	}
 }
