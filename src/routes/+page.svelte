@@ -7,7 +7,7 @@
 	import { browser } from '$app/environment';
 	import { mountainPeaks } from '../utils/mountains';
 	import { jasonTracks } from '../utils/jason-coords';
-	import type { Icon, LatLngExpression, Marker, Polyline, divIcon } from 'leaflet';
+	import type { Icon, LatLngExpression, Marker, Polyline } from 'leaflet';
 	import { convertToStandardTime } from '../utils/time';
 
 	import MntPopup from '../components/popups/mnt-popup.svelte';
@@ -15,11 +15,9 @@
 	import Switch from '../components/switch.svelte';
 
 	let showMntCounter = false;
-
 	let windowWidth: number;
-
 	let showModal = false;
-
+	let countAnimation = 0;
 	const showRoute: Writable<boolean> = getContext('showRoute');
 
 	// get current date
@@ -125,8 +123,8 @@
 
 			map = leaflet
 				.map(mapElement, {
-					scrollWheelZoom: false,
-					zoomControl: false
+					// scrollWheelZoom: false,
+					// zoomControl: false
 				})
 				.setView([41.044811, -107.27215], 6)
 				.setMaxZoom(14);
@@ -259,14 +257,18 @@
 		});
 
 		// jasons markers here, with a polyline and animation
-		polyline = leaflet.polyline(jasonlatLngs, { className: 'tracks-line' }).addTo(map);
+		polyline = leaflet.polyline(jasonlatLngs).addTo(map);
 
 		// on allow scrolling once animation finishes
-		setTimeout(() => {
-			map.scrollWheelZoom.enable();
-			map.zoomControl = true;
-			showMntCounter = true;
-		}, 4000);
+		// setTimeout(() => {
+		// 	map.scrollWheelZoom.enable();
+		// 	map.zoomControl = true;
+		// 	showMntCounter = true;
+		// }, 1000);
+
+		if (countAnimation === 0) {
+			countAnimation += 1;
+		}
 	};
 
 	const removeTracks = () => {
@@ -302,7 +304,9 @@
 <svelte:window on:resize={resizeMap} bind:innerWidth={windowWidth} />
 
 <main class="relative">
-	<div class="h-screen tracks-line" bind:this={mapElement} />
+	<!-- ${$showRoute && countAnimation ? 'tracks-line' : ''} -->
+	<div class={`h-screen `} bind:this={mapElement} />
+
 	<button
 		class="absolute top-4 left-[24px] z-[400] bg-slate-700 shadow-[2.5px_3px_2.5px_rgba(0,0,0,0.2),7.5px_7.5px_5px_rgba(0,0,0,0.5)] rounded-md w-12 h-12 cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out"
 		on:click={() => (showModal = true)}
@@ -331,7 +335,7 @@
 	.tracks-line {
 		stroke-dasharray: 1920;
 		stroke-dashoffset: 1920;
-		animation: dash 5s linear 1.5s forwards;
+		animation: dash 5s linear 0.5s forwards;
 	}
 
 	@keyframes dash {
