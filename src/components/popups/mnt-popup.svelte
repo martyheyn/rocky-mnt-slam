@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Splide, SplideSlide } from '@splidejs/svelte-splide';
 	import '@splidejs/svelte-splide/css';
+
 	import Modal from '../modal.svelte';
 
 	export let peakName: string = '';
@@ -9,6 +10,7 @@
 	export let link: string = '';
 	export let img: string;
 	export let video: string;
+	export let showRoute: boolean;
 
 	let showModal = false;
 	let videoPlayer: HTMLVideoElement;
@@ -32,7 +34,7 @@
 
 <div class="flex flex-col h-[195px]">
 	<div class="w-full min-w-[180px]">
-		{#if video}
+		{#if video && showRoute}
 			<Splide aria-label="mnt-peak">
 				<SplideSlide>
 					<img

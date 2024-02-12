@@ -2,18 +2,19 @@
 	import { onMount, onDestroy } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
 	import { elasticInOut } from 'svelte/easing';
-
-	import Countup from 'svelte-countup';
+	import { getContext } from 'svelte';
+	import type { Writable } from 'svelte/store';
 
 	// leaflet imports
 	import { browser } from '$app/environment';
 	import { mountainPeaks } from '../utils/mountains';
 	import { jasonTracks } from '../utils/jason-coords';
-	import type { Icon, LatLngExpression, divIcon } from 'leaflet';
+	import type { Icon, LatLngExpression, Marker, Polyline, divIcon } from 'leaflet';
 	import { convertToStandardTime } from '../utils/time';
 
 	import MntPopup from '../components/popups/mnt-popup.svelte';
 	import InfoModal from '../components/popups/info-modal.svelte';
+	import Switch from '../components/switch.svelte';
 
 	let showMntCounter = false;
 
@@ -21,8 +22,14 @@
 
 	let showModal = false;
 
+	const showRoute: Writable<boolean> = getContext('showRoute');
+
 	// get current date
 	const lastUpdated = 'Sept 25 2023, 09:07 (EST)';
+
+	// array for markers so I can remove and replace them
+	let markers: { marker: Marker<any>; type: string }[] = [];
+	let polyline: Polyline<any>;
 
 	// function to create mountain marker
 
@@ -39,6 +46,7 @@
 		vid: string;
 	}[];
 
+	// TODO: show video on intial click, not on exit
 	const placeMntMarker = async (
 		mnts: mntData,
 		icon: Icon<{
@@ -59,6 +67,8 @@
 				.addTo(map)
 				.bindPopup('');
 
+			markers.push({ marker, type: 'mnt' });
+
 			// need to render this component as HTML to pass to the popup
 			// Create a new instance of the Child component
 			marker.on('click', function (e) {
@@ -74,7 +84,8 @@
 						peakHieght: peak.gain,
 						link: peak.link,
 						img: peak.img,
-						video: peak.vid
+						video: peak.vid,
+						showRoute: $showRoute
 					}
 				});
 
@@ -142,52 +153,9 @@
 				iconSize: [24, 24]
 			});
 
-			const dotMarker = new leaflet.Icon({
-				iconUrl: '/dot.svg',
-				iconSize: [8, 8]
-			});
-
 			placeMntMarker(mountainPeaks.colorado, mntMarker);
 			placeMntMarker(mountainPeaks.wyoming, mntMarker);
 			placeMntMarker(mountainPeaks.montana, mntMarker);
-
-			// track Jasons path after a few seconds
-			setTimeout(() => {
-				// jasons markers here, with a polyline and animation
-				leaflet.polyline(jasonlatLngs, { className: 'tracks-line' }).addTo(map);
-
-				jasonTracks.map((track) => {
-					let day = track.time.split(' ')[0];
-					// convert yyyy/mm/dd to dd/mm/yyyy
-					day = day.split('/')[1] + '/' + day.split('/')[2] + '/' + day.split('/')[0];
-
-					let time = track.time.split(' ')[1].slice(0, -3);
-					// convert military time to standard time
-					time = convertToStandardTime(time);
-
-					// create marker with initailly closed popup
-					let marker = leaflet
-						.marker([track.lat, track.lng], { opacity: 0, icon: dotMarker })
-						.addTo(map);
-
-					let popup = leaflet
-						.popup({
-							className: 'dot-popup'
-						})
-						.setContent(trackPopup(day, time));
-
-					marker.bindPopup(popup).on('click', function () {
-						marker.closePopup();
-					});
-				});
-			}, 500);
-
-			// after animation finishes, allow zooming
-			setTimeout(() => {
-				map.scrollWheelZoom.enable();
-				map.zoomControl = true;
-				showMntCounter = true;
-			}, 4500);
 
 			// hide dot markers and popup unless zoomed in, keep mountains visible
 			map.on('zoomend', function () {
@@ -257,6 +225,68 @@
 		}
 	});
 
+	const addTracks = async () => {
+		const leaflet = await import('leaflet');
+
+		const dotMarker = new leaflet.Icon({
+			iconUrl: '/dot.svg',
+			iconSize: [8, 8]
+		});
+
+		jasonTracks.map((track) => {
+			let day = track.time.split(' ')[0];
+			// convert yyyy/mm/dd to dd/mm/yyyy
+			day = day.split('/')[1] + '/' + day.split('/')[2] + '/' + day.split('/')[0];
+
+			let time = track.time.split(' ')[1].slice(0, -3);
+			// convert military time to standard time
+			time = convertToStandardTime(time);
+
+			// create marker with initailly closed popup
+			let marker = leaflet
+				.marker([track.lat, track.lng], { opacity: 0, icon: dotMarker })
+				.addTo(map);
+
+			markers.push({ marker, type: 'track' });
+
+			let popup = leaflet
+				.popup({
+					className: 'dot-popup'
+				})
+				.setContent(trackPopup(day, time));
+
+			marker.bindPopup(popup).on('click', function () {
+				marker.closePopup();
+			});
+		});
+
+		// jasons markers here, with a polyline and animation
+		polyline = leaflet.polyline(jasonlatLngs, { className: 'tracks-line' }).addTo(map);
+
+		// on allow scrolling once animation finishes
+		setTimeout(() => {
+			map.scrollWheelZoom.enable();
+			map.zoomControl = true;
+			showMntCounter = true;
+		}, 4000);
+	};
+
+	const removeTracks = () => {
+		markers.map((marker) => {
+			if (marker.type === 'track') {
+				marker.marker.remove();
+			}
+		});
+		// polyline.remove();
+		if (map && polyline) {
+			map.removeLayer(polyline);
+		}
+	};
+
+	// add and remove track markers
+	$: $showRoute && addTracks();
+	$: !$showRoute && removeTracks();
+
 	onDestroy(async () => {
 		if (map) {
 			console.log('Unloading Leaflet map.');
@@ -282,41 +312,11 @@
 		<img src="/mountain-filled.svg" class="p-1.5" alt="mnt" />
 	</button>
 
-	{#if showMntCounter}
-		<div
-			class="flex flex-col absolute top-5 right-6 z-[999] text-white bg-slate-700 shadow-[2.5px_3px_2.5px_rgba(0,0,0,0.2),7.5px_7.5px_5px_rgba(0,0,0,0.5)] rounded-md"
-			transition:fly={{ y: -50, duration: 1000, easing: elasticInOut }}
-		>
-			<div class="flex gap-x-2 items-center">
-				<div class="flex flex-col gap-y-1">
-					<button
-						class="bg-slate-700 [text-shadow:0_0_10px_#fff] w-12 h-10 flex justify-center items-center rounded-md"
-					>
-						<Countup initial={0} value={103} duration={2000} step={1} />
-					</button>
-					<!-- <p class="text-lg shadow-xl font-semibold">Peaks</p> -->
-				</div>
-				<div class="flex items-center">
-					<div class="bg-slate-700 py-1 px-2 [text-shadow:0_0_10px_#fff] rounded-md h-fit">of</div>
-				</div>
-				<div class="flex flex-col gap-y-1">
-					<div
-						class="bg-slate-700
-				[text-shadow:0_0_10px_#fff] w-12 h-10 flex justify-center items-center rounded-md"
-					>
-						122
-					</div>
-					<!-- <p class="text-lg shadow-xl font-semibold">Done</p> -->
-				</div>
-			</div>
-
-			<div transition:fade={{ delay: 3000, duration: 3000, easing: elasticInOut }} class="pb-2">
-				<h2 class="font-semibold [text-shadow:0_0_10px_#fff] tracking-wide text-center">
-					Peaks Done
-				</h2>
-			</div>
-		</div>
-	{/if}
+	<div
+		class={`absolute top-5 right-6 transition-all ease-in-out duration-300 z-[999] bg-slate-700 shadow-[2.5px_3px_2.5px_rgba(0,0,0,0.2),7.5px_7.5px_5px_rgba(0,0,0,0.5)] rounded-md h-[72px] px-3 flex items-center`}
+	>
+		<Switch label="Show Jasons Journey" textColor="white" disabled={false} info={true} />
+	</div>
 
 	<div class="absolute bottom-0 right-0 z-[400] bg-white">
 		<p class="text-xs text-slate-400 px-1 py-[1.5px]">
