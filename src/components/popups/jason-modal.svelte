@@ -30,5 +30,23 @@
 		</div>
 
 		<div class="border-b border-b-slate-800 my-4" />
+
+		<div class="">
+			<p class="inline-block mb-1">
+				Zoom in on the map and click the <span class="px-[2px] inline-block cursor-pointer">
+					<img src="/dot.svg" alt="dot" class="w-4 h-4" />
+				</span> icon to track his times
+			</p>
+
+			<p class="inline-block my-1">
+				Click the <span class="px-[2px] inline-block w-5 h-5">
+					<img
+						src="/mountain-filled.svg"
+						alt="mnt"
+						class="w-full h-full object-cover cursor-pointer"
+					/>
+				</span> icon for more information on each peak and a summit verification video
+			</p>
+		</div>
 	</div>
 </Modal>
