@@ -42,6 +42,9 @@
 		vid: string;
 	}[];
 
+	// TODO: Animation not working
+	// TODO: Few vids missing
+	// TODO: Componentize this page
 	// TODO: show video on intial click, not on exit
 	const placeMntMarker = async (
 		mnts: mntData,
