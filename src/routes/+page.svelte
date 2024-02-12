@@ -1,7 +1,5 @@
 <script lang="ts">
 	import { onMount, onDestroy } from 'svelte';
-	import { fade, fly } from 'svelte/transition';
-	import { elasticInOut } from 'svelte/easing';
 	import { getContext } from 'svelte';
 	import type { Writable } from 'svelte/store';
 

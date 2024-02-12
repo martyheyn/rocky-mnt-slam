@@ -823,7 +823,7 @@ export const mountainPeaks = {
 			location: { lat: 45.048333, lng: -109.526389 },
 			link: 'https://en.wikipedia.org/wiki/Mount_Rearguard',
 			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Granite_Peak_Montana_2.jpg',
-			vid: ''
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/mt_rearguard.mp4'
 		},
 		{
 			name: 'Spirit Mountain',
@@ -832,7 +832,7 @@ export const mountainPeaks = {
 			location: { lat: 45.040278, lng: -109.551111 },
 			link: 'https://en.wikipedia.org/wiki/Spirit_Mountain_(Montana)',
 			img: '',
-			vid: ''
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/mt_spirit.mp4'
 		},
 		{
 			name: 'Forget Me Not',
@@ -841,7 +841,7 @@ export const mountainPeaks = {
 			location: { lat: 45.05636, lng: -109.56367 },
 			link: 'https://www.summitpost.org/forget-me-not-mountain/911579',
 			img: '',
-			vid: ''
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/mt_forget_me_not.mp4'
 		},
 		{
 			name: 'Beartooth Mountain',
@@ -850,7 +850,7 @@ export const mountainPeaks = {
 			location: { lat: 45.060794, lng: -109.568163 },
 			link: 'https://www.peakbagger.com/peak.aspx?pid=5272',
 			img: 'https://dy1lf8fnfk5xf.cloudfront.net/The_Beartooth_Mountains_from_Buffalo_Plateau_Trail.jpg',
-			vid: ''
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/mt_beartooth.mp4'
 		},
 		{
 			name: 'Sky Pilot',
@@ -859,7 +859,7 @@ export const mountainPeaks = {
 			location: { lat: 45.078889, lng: -109.617222 },
 			link: 'https://en.wikipedia.org/wiki/Sky_Pilot_Mountain_(Montana)',
 			img: '',
-			vid: ''
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/mt_sky_pilot.mp4'
 		},
 		{
 			name: 'Whitetail Peak',
@@ -868,7 +868,7 @@ export const mountainPeaks = {
 			location: { lat: 45.088889, lng: -109.587778 },
 			link: 'https://en.wikipedia.org/wiki/Whitetail_Peak',
 			img: '',
-			vid: ''
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/mt_whitetail.mp4'
 		},
 		{
 			name: 'Silver Run Peak ',
@@ -877,7 +877,7 @@ export const mountainPeaks = {
 			location: { lat: 45.121111, lng: -109.545278 },
 			link: 'https://en.wikipedia.org/wiki/Silver_Run_Peak',
 			img: '',
-			vid: ''
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/mt_silver_run.mp4'
 		},
 		{
 			name: 'Bowback Mountain',
@@ -886,7 +886,7 @@ export const mountainPeaks = {
 			location: { lat: 45.127778, lng: -109.618333 },
 			link: 'https://en.wikipedia.org/wiki/Bowback_Mountain',
 			img: '',
-			vid: ''
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/mt_bowback.mp4'
 		},
 		{
 			name: 'Sundance Mountain ',
@@ -895,7 +895,7 @@ export const mountainPeaks = {
 			location: { lat: 45.106389, lng: -109.609444 },
 			link: 'https://en.wikipedia.org/wiki/Sundance_Mountain',
 			img: 'https://dy1lf8fnfk5xf.cloudfront.net/Sundance_Mountain.jpg',
-			vid: ''
+			vid: 'https://d3cscezb7a84vr.cloudfront.net/mt_sundance.mp4'
 		},
 		{
 			name: 'Caste Mountain',
