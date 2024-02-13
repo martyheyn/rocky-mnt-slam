@@ -16,13 +16,16 @@
 	const uniqueID = Math.floor(Math.random() * 100);
 </script>
 
-<div class="s s--slider w-fit" style="font-size:{fontSize}px">
+<div
+	class="s s--slider w-fit transition-all ease-in-out duration-300"
+	style="font-size:{fontSize}px"
+>
 	{#if label}
 		<span
 			id={`switch-${uniqueID}`}
 			class={`${
 				textColor === 'black' ? 'text-black' : 'text-white'
-			} bg-slate-700 py-1 px-2 [text-shadow:0_0_10px_#fff] rounded-md h-fit`}>{label}</span
+			} bg-slate-700 py-1 px-2 [text-shadow:0_0_10px_#fff] rounded-md h-fit text-sm`}>{label}</span
 		>
 	{/if}
 	<div class="w-full flex justify-between items-center px-2">

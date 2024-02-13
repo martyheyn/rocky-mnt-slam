@@ -61,7 +61,7 @@
 		{#if additionalInfo}
 			<div transition:slide={{ duration: 300 }}>
 				<p class="font-semibold block">
-					To see Jason Heyn's attempt st the Rocky Mountain Slam click this
+					To see Jason Heyn's attempt at the Rocky Mountain Slam click this
 					<span class="inline-block px-1">
 						<Switch label="" fontSize={12} />
 					</span>

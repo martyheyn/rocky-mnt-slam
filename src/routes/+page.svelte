@@ -127,7 +127,7 @@
 			map = leaflet
 				.map(mapElement, {
 					// scrollWheelZoom: false,
-					// zoomControl: false
+					zoomControl: false
 				})
 				.setView([41.044811, -107.27215], 6)
 				.setMaxZoom(14);
@@ -302,6 +302,8 @@
 			map.invalidateSize();
 		}
 	}
+
+	$: switchLabel = windowWidth > 600 ? 'Show Jasons Journey' : "Jason's Journey";
 </script>
 
 <svelte:window on:resize={resizeMap} bind:innerWidth={windowWidth} />
@@ -318,9 +320,9 @@
 	</button>
 
 	<div
-		class={`absolute top-5 right-6 transition-all ease-in-out duration-300 z-[999] bg-slate-700 shadow-[2.5px_3px_2.5px_rgba(0,0,0,0.2),7.5px_7.5px_5px_rgba(0,0,0,0.5)] rounded-md h-[72px] px-3 flex items-center`}
+		class={`absolute top-4 right-6 transition-all ease-in-out duration-300 z-[999] bg-slate-700 shadow-[2.5px_3px_2.5px_rgba(0,0,0,0.2),7.5px_7.5px_5px_rgba(0,0,0,0.5)] rounded-md h-[72px] px-3 flex items-center`}
 	>
-		<Switch label="Show Jasons Journey" textColor="white" disabled={false} info={true} />
+		<Switch label={switchLabel} textColor="white" disabled={false} info={true} />
 	</div>
 
 	<div class="absolute bottom-0 right-0 z-[400] bg-white">
