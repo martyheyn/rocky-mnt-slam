@@ -313,14 +313,14 @@
 	<div class={`h-screen `} bind:this={mapElement} />
 
 	<button
-		class="absolute top-4 left-[24px] z-[400] bg-slate-700 shadow-[2.5px_3px_2.5px_rgba(0,0,0,0.2),7.5px_7.5px_5px_rgba(0,0,0,0.5)] rounded-md w-12 h-12 cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out"
+		class="absolute top-6 sm:top-4 left-[24px] z-[400] bg-slate-700 shadow-[2.5px_3px_2.5px_rgba(0,0,0,0.2),7.5px_7.5px_5px_rgba(0,0,0,0.5)] rounded-md w-12 h-12 cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out"
 		on:click={() => (showModal = true)}
 	>
 		<img src="/mountain-filled.svg" class="p-1.5" alt="mnt" />
 	</button>
 
 	<div
-		class={`absolute top-4 right-6 transition-all ease-in-out duration-300 z-[999] bg-slate-700 shadow-[2.5px_3px_2.5px_rgba(0,0,0,0.2),7.5px_7.5px_5px_rgba(0,0,0,0.5)] rounded-md h-[72px] px-3 flex items-center`}
+		class={`absolute top-6 sm:top-4 right-6 transition-all ease-in-out duration-300 z-[999] bg-slate-700 shadow-[2.5px_3px_2.5px_rgba(0,0,0,0.2),7.5px_7.5px_5px_rgba(0,0,0,0.5)] rounded-md h-[72px] px-3 flex items-center`}
 	>
 		<Switch label={switchLabel} textColor="white" disabled={false} info={true} />
 	</div>
